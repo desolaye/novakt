@@ -1,14 +1,23 @@
+import { WhatsAppIcon, EmailIcon } from '@/assets/icons'
+import logo from '@/assets/images/logo.png'
+
 export const Header = () => {
   return (
-    <header>
-      <section>logo</section>
+    <header className="py-4 grid grid-cols-3 gap-4 bg-x-gray text-white place-items-center">
       <section>
-        <h1>Производим современные отделочные материалы по гибким ценам</h1>
+        <img src={logo} className="w-16 lg:w-20" />
       </section>
       <section>
-        <div>whatsapp</div>
-        <div>e-mail</div>
-        <div>phone</div>
+        <h1 className="text-lg lg:text-2xl tracking-wide font-light text-center">
+          Novak Techonology
+        </h1>
+      </section>
+      <section className="flex flex-col-reverse lg:flex-row">
+        <div className='flex gap-2'>
+        <WhatsAppIcon className='self-center w-full' />
+        <EmailIcon className='self-center w-full' />
+        </div>
+        <div className='p-2'>+ 7 (967) 500-04-65</div>
       </section>
     </header>
   )
