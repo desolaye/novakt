@@ -1,1 +1,1 @@
-export * from './sectionType'
+export * from './sectionsType'

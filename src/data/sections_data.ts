@@ -1,22 +1,22 @@
-import { SectionType } from '@/types'
+import { SectionsType } from '@/types'
 
-export const SECTIONS_DATA: SectionType[] = [
+export const SECTIONS_DATA: SectionsType[] = [
   {
-    name: 'Главная',
+    title: 'Главная',
   },
   {
-    name: 'Мы производим',
+    title: 'Мы производим',
   },
   {
-    name: 'Фото галерея',
+    title: 'Фото галерея',
   },
   {
-    name: 'Преимущество материалов',
+    title: 'Преимущество материалов',
   },
   {
-    name: 'Варианты применения',
+    title: 'Варианты применения',
   },
   {
-    name: 'Контакты',
+    title: 'Контакты',
   },
 ]

@@ -3,10 +3,43 @@
 @tailwind utilities;
 
 .hide-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .hide-scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type='text'] {
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #212121;
+}
+
+textarea,
+textarea:focus {
+  border: none;
+  border-bottom: 1px solid #212121;
+  height: 125px;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-apperarance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 8px;
+
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }

@@ -1,3 +1,7 @@
 export * from './Header'
 export * from './Footer'
 export * from './Sections'
+export * from './Section'
+export * from './MaterialCards'
+export * from './BackForm'
+export * from './ContactInfo'
