@@ -10,7 +10,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -19,7 +19,7 @@
       "@/*": ["src/*"]
     },
     "baseUrl": "./",
-    "types": ["vite/client", "node", "vite-plugin-svgr/client"]
+    "types": ["vite/client", "node", "vite-plugin-svgr"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
