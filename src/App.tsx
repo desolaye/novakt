@@ -1,4 +1,11 @@
-import { BackForm, ContactInfo, MaterialCards, Section, Sections } from './components'
+import {
+  Advantangies,
+  BackForm,
+  ContactInfo,
+  MaterialCards,
+  Section,
+  Sections,
+} from './components'
 import house from '@/assets/images/dom_2.jpg'
 
 export const App = () => {
@@ -15,6 +22,9 @@ export const App = () => {
       </section>
       <Section title="Мы производим">
         <MaterialCards />
+      </Section>
+      <Section title="Преимущество материалов">
+        <Advantangies />
       </Section>
       <Section secondary title="Контакты">
         <>
