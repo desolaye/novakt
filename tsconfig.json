@@ -19,7 +19,7 @@
       "@/*": ["src/*"]
     },
     "baseUrl": "./",
-    "types": ["vite/client", "node", "vite-plugin-svgr"]
+    "types": ["vite/client", "node"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
