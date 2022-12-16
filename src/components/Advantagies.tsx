@@ -3,12 +3,12 @@ import { Icon24ArrowRightOutline } from '@vkontakte/icons'
 
 export const Advantangies = () => {
   return (
-    <div className="grid grid-rows-3 place-items-center">
+    <div className="grid grid-rows-3 place-items-center py-8 gap-12">
       <div className="flex gap-4">
         {ADVANTAGE_DATA.map((e, i) => (
-          <div key={i} className="flex flex-col gap-2">
-            <img src={e.img} className="self-center" alt="fire" />
-            <p className="self-center">{e.title}</p>
+          <div key={i} className="flex flex-col gap-2 items-center">
+            <img src={e.img} alt="fire" />
+            <p>{e.title}</p>
           </div>
         ))}
       </div>
