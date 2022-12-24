@@ -1,12 +1,12 @@
 import {
-    Advantangies,
-    BackForm,
-    ContactInfo,
-    MaterialCards,
-    Section,
-    NavBar,
-  } from '@/components'
-  import house from '@/assets/images/dom_2.jpg'
+  Advantangies,
+  BackForm,
+  ContactInfo,
+  MaterialCards,
+  Section,
+  NavBar,
+} from '@/components'
+import house from '@/assets/images/dom_2.jpg'
 
 export const MainPage = () => {
   return (

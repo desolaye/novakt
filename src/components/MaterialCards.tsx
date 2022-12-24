@@ -7,7 +7,7 @@ export const MaterialCards = () => {
     <div className="grid lg:grid-cols-2 gap-4 max-w-7xl mx-auto px-8">
       {MATERIALS_DATA.map((e) => (
         <Link key={e.id} to={e.id}>
-          <div className="bg-x-white flex justify-between">
+          <div className="bg-x-white flex justify-between shadow-xl rounded-sm">
             <div className="p-6">
               <h4 className="pb-72 text-xl font-bold">{e.title}</h4>
               <button className="flex gap-2 items-center">
