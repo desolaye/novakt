@@ -14,13 +14,24 @@ export const MaterialPage = () => {
             <div className="translate-x-20 shadow-lg">
               <img src={e.img} alt="img" />
             </div>
-            <div className="p-4 bg-x-white -translate-x-20 shadow-xl rounded-sm">
+            <div className="p-4 bg-x-white -translate-x-20 shadow-xl flex flex-col bg-gradient-to-br from-x-gray to-slate-800 text-zinc-300 rounded-md gap-2">
               {toValidText(e.description)}
             </div>
           </section>
+          {e.moreDescription && (
+            <Section id="moreDescription" title="Полное описание">
+              <div className="text-lg px-4 flex flex-col gap-1">
+                {toValidText(e.moreDescription)}
+              </div>
+            </Section>
+          )}
+
           <Section id="colors" title="Цветовые решения">
-            <div className='grid grid-cols-2 xl:grid-cols-4 gap-8'>
-              {e.colors && e.colors.map((img, i) => <img key={i} src={img} alt="img" />)}
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
+              {e.colors &&
+                e.colors.map((img, i) => (
+                  <img key={i} src={img} alt="img" className="h-full" />
+                ))}
             </div>
           </Section>
           <Section id={e.id} title="Каталог товара">

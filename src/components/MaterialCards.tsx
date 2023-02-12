@@ -6,17 +6,19 @@ export const MaterialCards = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-4 max-w-7xl mx-auto px-8">
       {MATERIALS_DATA.map((e) => (
-        <Link key={e.id} to={e.id}>
-          <div className="bg-x-white flex justify-between shadow-xl rounded-sm">
-            <div className="p-6">
-              <h4 className="pb-72 text-xl font-bold">{e.title}</h4>
-              <button className="flex gap-2 items-center">
-                <p className="text-lg tracking-wide">Подробнее</p>
-                <Icon20ChevronRight />
-              </button>
-            </div>
-            <img src="" alt="img" />
+        <Link
+          key={e.id}
+          to={e.id}
+          className="bg-x-white grid grid-cols-2 shadow-xl rounded-sm hover:scale-95 hover:shadow-inner focus:scale-95 focus:shadow-inner transition-all max-h-96 overflow-hidden"
+        >
+          <div className="p-6 flex flex-col justify-between">
+            <h4 className="text-xl font-bold">{e.title}</h4>
+            <button className="flex gap-2 items-center">
+              <p className="text-lg tracking-wide">Подробнее</p>
+              <Icon20ChevronRight />
+            </button>
           </div>
+          <img src={e.img} alt="img" className="justify-self-end min-h-full" />
         </Link>
       ))}
     </div>

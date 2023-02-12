@@ -43,3 +43,7 @@ textarea:focus {
   -o-box-shadow: none;
   box-shadow: none;
 }
+
+.react-multi-carousel-list{
+  position: unset !important;
+}
