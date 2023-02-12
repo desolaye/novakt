@@ -1,3 +1,5 @@
 export * from './sections_data'
 export * from './materials_data'
 export * from './advantage_data'
+export * from './gallery_data'
+export * from './variants_data'

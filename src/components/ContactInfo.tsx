@@ -11,7 +11,11 @@ export const ContactInfo = () => {
     <div className="text-x-white pb-8 flex flex-col lg:flex-row justify-center align-middle lg:justify-evenly gap-4">
       <div>
         <div className="flex justify-center">
-          <img src={map} alt="map" />
+          <img
+            className="max-w-[750px] shadow-lg rounded"
+            src="https://betterproposals.io/blog/wp-content/uploads/2022/11/x-email-tips.png"
+            alt="map"
+          />
         </div>
       </div>
       <div className="self-center">

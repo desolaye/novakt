@@ -1,3 +1,4 @@
+import Carousel from 'react-multi-carousel'
 import {
   Advantangies,
   BackForm,
@@ -6,7 +7,27 @@ import {
   Section,
   NavBar,
 } from '@/components'
+
+import { GALLERY_DATA, VARIANTS_DATA } from '@/data'
 import house from '@/assets/images/dom_2.jpg'
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 1024, min: 0 },
+    items: 1,
+  },
+}
+
+const responsive2 = {
+  desktop: {
+    breakpoint: { max: 3000, min: 0 },
+    items: 1,
+  },
+}
 
 export const MainPage = () => {
   return (
@@ -24,13 +45,61 @@ export const MainPage = () => {
         <MaterialCards />
       </Section>
       <Section id="photos" title="Фото галерея">
-        <div></div>
+        <div className="relative max-w-7xl mx-auto">
+          <p className="py-4">Вариант 1:</p>
+          <Carousel slidesToSlide={2} responsive={responsive} infinite={true}>
+            {GALLERY_DATA.map((e, i) => (
+              <img
+                className="w-80 h-64 xl:w-[600px] xl:h-[400px] mx-auto rounded shadow-sm"
+                key={i}
+                src={e}
+                alt="gallery"
+              />
+            ))}
+          </Carousel>
+          <p className="py-4">Вариант 2:</p>
+          <Carousel responsive={responsive2} infinite={true}>
+            {GALLERY_DATA.map((e, i) => (
+              <img
+                className="w-80 h-64 xl:w-[950px] xl:h-[600px] mx-auto rounded shadow-sm"
+                key={i}
+                src={e}
+                alt="gallery"
+              />
+            ))}
+          </Carousel>
+        </div>
       </Section>
       <Section id="advantage" title="Преимущество материалов">
         <Advantangies />
       </Section>
       <Section id="variants" title="Варианты применения">
-        <div></div>
+        <>
+          <div className="grid grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
+            {VARIANTS_DATA.map((e, i) => (
+              <div
+                key={i}
+                className={`flex flex-col justify-start items-center gap-6 ${
+                  i > 2 && 'hidden'
+                }`}
+              >
+                {e.Icon}
+                <p>{e.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 place-items-center gap-8 max-w-3xl mx-auto px-4 py-12">
+            {VARIANTS_DATA.map((e, i) => (
+              <div
+                key={i}
+                className={`flex flex-col items-center gap-6 ${i < 3 && 'hidden'}`}
+              >
+                {e.Icon}
+                <p>{e.text}</p>
+              </div>
+            ))}
+          </div>
+        </>
       </Section>
       <Section id="contacts" secondary title="Контакты">
         <>
