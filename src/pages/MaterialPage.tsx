@@ -29,8 +29,11 @@ export const MaterialPage = () => {
           <Section id="colors" title="Цветовые решения">
             <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
               {e.colors &&
-                e.colors.map((img, i) => (
-                  <img key={i} src={img} alt="img" className="h-full" />
+                e.colors.map((e, i) => (
+                  <div className="flex flex-col gap-2 items-center">
+                    <img key={i} src={e.img} alt="img" className="h-full" />
+                    <p>{e.name}</p>
+                  </div>
                 ))}
             </div>
           </Section>

@@ -38,12 +38,61 @@ import stone16 from '@/assets/images/materials/stone/16.png'
 import stone17 from '@/assets/images/materials/stone/17.png'
 import stone18 from '@/assets/images/materials/stone/18.png'
 
-import veneer1 from '@/assets/images/materials/veneer/1.png'
-import veneer2 from '@/assets/images/materials/veneer/2.png'
+import veneer1 from '@/assets/images/materials/veneer/1.jpeg'
+import veneer3 from '@/assets/images/materials/veneer/3.jpeg'
+import veneer4 from '@/assets/images/materials/veneer/4.jpeg'
+import veneer5 from '@/assets/images/materials/veneer/5.jpeg'
+import veneer7 from '@/assets/images/materials/veneer/7.jpeg'
+import veneer8 from '@/assets/images/materials/veneer/8.jpeg'
+import veneer9 from '@/assets/images/materials/veneer/9.jpeg'
+import veneer11 from '@/assets/images/materials/veneer/11.jpeg'
+import veneer12 from '@/assets/images/materials/veneer/12.jpeg'
+import veneer13 from '@/assets/images/materials/veneer/13.jpeg'
+import veneer14 from '@/assets/images/materials/veneer/14.jpeg'
+import veneer15 from '@/assets/images/materials/veneer/15.jpeg'
+import veneer16 from '@/assets/images/materials/veneer/16.jpeg'
+import veneer17 from '@/assets/images/materials/veneer/17.jpeg'
+import veneer18 from '@/assets/images/materials/veneer/18.jpeg'
+import veneer19 from '@/assets/images/materials/veneer/19.jpeg'
+import veneer22 from '@/assets/images/materials/veneer/22.jpeg'
+import veneer23 from '@/assets/images/materials/veneer/23.jpeg'
+import veneer24 from '@/assets/images/materials/veneer/24.jpeg'
+import veneer29 from '@/assets/images/materials/veneer/29.jpeg'
+import veneer31 from '@/assets/images/materials/veneer/31.jpeg'
+import veneer34 from '@/assets/images/materials/veneer/34.jpeg'
+import veneer36 from '@/assets/images/materials/veneer/36.jpeg'
+import veneer37 from '@/assets/images/materials/veneer/37.jpeg'
+import veneer39 from '@/assets/images/materials/veneer/39.jpeg'
+import veneer41 from '@/assets/images/materials/veneer/41.jpeg'
+import veneer44 from '@/assets/images/materials/veneer/44.jpeg'
+import veneer47 from '@/assets/images/materials/veneer/47.jpeg'
+import veneer48 from '@/assets/images/materials/veneer/48.jpeg'
+import veneer49 from '@/assets/images/materials/veneer/49.jpeg'
+import veneer60 from '@/assets/images/materials/veneer/60.jpeg'
+import veneer86 from '@/assets/images/materials/veneer/86.jpeg'
+import veneer88 from '@/assets/images/materials/veneer/88.jpeg'
+import veneer89 from '@/assets/images/materials/veneer/89.jpeg'
+import veneer90 from '@/assets/images/materials/veneer/90.jpeg'
+import veneer91 from '@/assets/images/materials/veneer/91.jpeg'
 
-import chipped1 from '@/assets/images/materials/chipped/1.png'
-import chipped2 from '@/assets/images/materials/chipped/2.png'
-import chipped3 from '@/assets/images/materials/chipped/3.png'
+import chipped1 from '@/assets/images/materials/chipped/1.jpeg'
+import chipped2 from '@/assets/images/materials/chipped/2.jpeg'
+import chipped3 from '@/assets/images/materials/chipped/3.jpeg'
+import chipped4 from '@/assets/images/materials/chipped/4.jpeg'
+import chipped5 from '@/assets/images/materials/chipped/5.jpeg'
+import chipped6 from '@/assets/images/materials/chipped/6.jpeg'
+import chipped7 from '@/assets/images/materials/chipped/7.jpeg'
+import chipped8 from '@/assets/images/materials/chipped/8.jpeg'
+import chipped9 from '@/assets/images/materials/chipped/9.jpeg'
+import chipped10 from '@/assets/images/materials/chipped/10.jpeg'
+import chipped11 from '@/assets/images/materials/chipped/11.jpeg'
+import chipped12 from '@/assets/images/materials/chipped/12.jpeg'
+import chipped13 from '@/assets/images/materials/chipped/13.jpeg'
+import chipped14 from '@/assets/images/materials/chipped/14.jpeg'
+import chipped15 from '@/assets/images/materials/chipped/15.jpeg'
+import chipped16 from '@/assets/images/materials/chipped/16.jpeg'
+import chipped17 from '@/assets/images/materials/chipped/17.jpeg'
+import chipped18 from '@/assets/images/materials/chipped/18.jpeg'
 
 import panels1 from '@/assets/images/materials/panels/1.png'
 import panels2 from '@/assets/images/materials/panels/2.png'
@@ -63,6 +112,44 @@ import panels15 from '@/assets/images/materials/panels/15.png'
 import panels16 from '@/assets/images/materials/panels/16.png'
 import panels17 from '@/assets/images/materials/panels/17.png'
 
+import plaster1 from '@/assets/images/materials/plaster/1.jpeg'
+import plaster2 from '@/assets/images/materials/plaster/2.jpeg'
+import plaster3 from '@/assets/images/materials/plaster/3.jpeg'
+import plaster4 from '@/assets/images/materials/plaster/4.jpeg'
+import plaster5 from '@/assets/images/materials/plaster/5.jpeg'
+import plaster6 from '@/assets/images/materials/plaster/6.jpeg'
+import plaster7 from '@/assets/images/materials/plaster/7.jpeg'
+import plaster8 from '@/assets/images/materials/plaster/8.jpeg'
+import plaster9 from '@/assets/images/materials/plaster/9.jpeg'
+import plaster10 from '@/assets/images/materials/plaster/10.jpeg'
+import plaster11 from '@/assets/images/materials/plaster/11.jpeg'
+import plaster12 from '@/assets/images/materials/plaster/12.jpeg'
+import plaster13 from '@/assets/images/materials/plaster/13.jpeg'
+import plaster14 from '@/assets/images/materials/plaster/14.jpeg'
+import plaster15 from '@/assets/images/materials/plaster/15.jpeg'
+import plaster16 from '@/assets/images/materials/plaster/16.jpeg'
+import plaster17 from '@/assets/images/materials/plaster/17.jpeg'
+import plaster18 from '@/assets/images/materials/plaster/18.jpeg'
+import plaster19 from '@/assets/images/materials/plaster/19.jpeg'
+import plaster20 from '@/assets/images/materials/plaster/20.jpeg'
+import plaster21 from '@/assets/images/materials/plaster/21.jpeg'
+import plaster22 from '@/assets/images/materials/plaster/22.jpeg'
+import plaster23 from '@/assets/images/materials/plaster/23.jpeg'
+import plaster24 from '@/assets/images/materials/plaster/24.jpeg'
+import plaster25 from '@/assets/images/materials/plaster/25.jpeg'
+import plaster26 from '@/assets/images/materials/plaster/26.jpeg'
+import plaster27 from '@/assets/images/materials/plaster/27.jpeg'
+import plaster28 from '@/assets/images/materials/plaster/28.jpeg'
+import plaster29 from '@/assets/images/materials/plaster/29.jpeg'
+import plaster30 from '@/assets/images/materials/plaster/30.jpeg'
+import plaster31 from '@/assets/images/materials/plaster/31.jpeg'
+import plaster32 from '@/assets/images/materials/plaster/32.jpeg'
+import plaster33 from '@/assets/images/materials/plaster/33.jpeg'
+import plaster34 from '@/assets/images/materials/plaster/34.jpeg'
+import plaster35 from '@/assets/images/materials/plaster/35.jpeg'
+import plaster36 from '@/assets/images/materials/plaster/36.jpeg'
+import plaster37 from '@/assets/images/materials/plaster/37.jpeg'
+
 export const MATERIALS_DATA = [
   {
     id: 'stone',
@@ -76,24 +163,78 @@ export const MATERIALS_DATA = [
     Эксплуатация от -60°С до +85°С, Морозостойкость F70\n
     Срок службы от 30 лет`,
     colors: [
-      stone1,
-      stone2,
-      stone3,
-      stone4,
-      stone5,
-      stone6,
-      stone7,
-      stone8,
-      stone9,
-      stone10,
-      stone11,
-      stone12,
-      stone13,
-      stone14,
-      stone15,
-      stone16,
-      stone17,
-      stone18,
+      {
+        name: 'MK 05',
+        img: stone1,
+      },
+      {
+        name: 'MK 04',
+        img: stone2,
+      },
+      {
+        name: 'MK 03',
+        img: stone3,
+      },
+      {
+        name: 'MK 02',
+        img: stone4,
+      },
+      {
+        name: 'MK 01',
+        img: stone5,
+      },
+      {
+        name: 'NT 06',
+        img: stone6,
+      },
+      {
+        name: 'NT 05',
+        img: stone7,
+      },
+      {
+        name: 'NT 04',
+        img: stone8,
+      },
+      {
+        name: 'NT 03',
+        img: stone9,
+      },
+      {
+        name: 'NT 02',
+        img: stone10,
+      },
+      {
+        name: 'NT 01',
+        img: stone11,
+      },
+      {
+        name: 'GS 07',
+        img: stone12,
+      },
+      {
+        name: 'GS 06',
+        img: stone13,
+      },
+      {
+        name: 'GS 05',
+        img: stone14,
+      },
+      {
+        name: 'GS 04',
+        img: stone15,
+      },
+      {
+        name: 'GS 03',
+        img: stone16,
+      },
+      {
+        name: 'GS 02',
+        img: stone17,
+      },
+      {
+        name: 'GS 01',
+        img: stone18,
+      },
     ],
   },
   {
@@ -108,19 +249,58 @@ export const MATERIALS_DATA = [
     Толщина 3 мм, Вес 2 кг/м2\n
     Морозостойкость F70, Срок службы от 30 лет`,
     colors: [
-      brick1,
-      brick2,
-      brick3,
-      brick4,
-      brick5,
-      brick6,
-      brick7,
-      brick8,
-      brick9,
-      brick10,
-      brick11,
-      brick12,
-      brick13,
+      {
+        name: '',
+        img: brick1,
+      },
+      {
+        name: '',
+        img: brick2,
+      },
+      {
+        name: '',
+        img: brick3,
+      },
+      {
+        name: '',
+        img: brick4,
+      },
+      {
+        name: '',
+        img: brick5,
+      },
+      {
+        name: '',
+        img: brick6,
+      },
+      {
+        name: '',
+        img: brick7,
+      },
+      {
+        name: '',
+        img: brick8,
+      },
+      {
+        name: '',
+        img: brick9,
+      },
+      {
+        name: '',
+        img: brick10,
+      },
+      {
+        name: '',
+        img: brick11,
+      },
+      {
+        name: '',
+        img: brick12,
+      },
+      {
+        name: '',
+        img: brick13,
+      },
     ],
   },
   {
@@ -134,23 +314,74 @@ export const MATERIALS_DATA = [
     Это прочнейший слой натуральных минералов и эко-полимеров. Он не подвергается изменению под солнечных светом и перепадами температуры.\n
     Материал достаточно прочный и плотный, что позволяет его  использовать даже в суровых атмосферных условиях.`,
     colors: [
-      panels1,
-      panels2,
-      panels3,
-      panels4,
-      panels5,
-      panels6,
-      panels7,
-      panels8,
-      panels9,
-      panels10,
-      panels11,
-      panels12,
-      panels13,
-      panels14,
-      panels15,
-      panels16,
-      panels17,
+      {
+        name: '',
+        img: panels1,
+      },
+      {
+        name: '',
+        img: panels2,
+      },
+      {
+        name: '',
+        img: panels3,
+      },
+      {
+        name: '',
+        img: panels4,
+      },
+      {
+        name: '',
+        img: panels5,
+      },
+      {
+        name: '',
+        img: panels6,
+      },
+      {
+        name: '',
+        img: panels7,
+      },
+      {
+        name: '',
+        img: panels8,
+      },
+      {
+        name: '',
+        img: panels9,
+      },
+      {
+        name: '',
+        img: panels10,
+      },
+      {
+        name: '',
+        img: panels11,
+      },
+      {
+        name: '',
+        img: panels12,
+      },
+      {
+        name: '',
+        img: panels13,
+      },
+      {
+        name: '',
+        img: panels14,
+      },
+      {
+        name: '',
+        img: panels15,
+      },
+      {
+        name: '',
+        img: panels16,
+      },
+      {
+        name: '',
+        img: panels17,
+      },
     ],
   },
   {
@@ -159,6 +390,156 @@ export const MATERIALS_DATA = [
     img: plaster,
     description: `В настоящее время мраморную крошку используют для воплощения самых смелых дизайнерских идей: в историческом, классическом или ультрамодном стилях.\n\n
     Различные оттенки природных и искусственных цветов использования при производстве (от самых светлых до темных)позволяют создавать оригинальные узоры, рисунки, орнаменты, выделять отдельные элементы или оставлять покрытие как основу`,
+    colors: [
+      {
+        name: 'MS 01',
+        img: plaster1,
+      },
+      {
+        name: 'MS 02',
+        img: plaster3,
+      },
+      {
+        name: 'MS 03',
+        img: plaster5,
+      },
+      {
+        name: 'MS 04',
+        img: plaster2,
+      },
+      {
+        name: 'MS 05',
+        img: plaster4,
+      },
+      {
+        name: 'MS 06',
+        img: plaster6,
+      },
+      {
+        name: 'MS 07',
+        img: plaster7,
+      },
+      {
+        name: 'MS 08',
+        img: plaster10,
+      },
+      {
+        name: 'MS 09',
+        img: plaster8,
+      },
+      {
+        name: 'MS 10',
+        img: plaster13,
+      },
+      {
+        name: 'MS 11',
+        img: plaster9,
+      },
+      {
+        name: 'MS 12',
+        img: plaster11,
+      },
+      {
+        name: 'MS 13',
+        img: plaster12,
+      },
+      {
+        name: 'MS 14',
+        img: plaster15,
+      },
+      {
+        name: 'MS 15',
+        img: plaster14,
+      },
+      {
+        name: 'MS 16',
+        img: plaster17,
+      },
+      {
+        name: 'MS 17',
+        img: plaster16,
+      },
+      {
+        name: 'MS 18',
+        img: plaster24,
+      },
+      {
+        name: 'MS 19',
+        img: plaster18,
+      },
+      {
+        name: 'MS 20',
+        img: plaster20,
+      },
+      {
+        name: 'MS 21',
+        img: plaster21,
+      },
+      {
+        name: 'MS 22',
+        img: plaster19,
+      },
+      {
+        name: 'MS 23',
+        img: plaster22,
+      },
+      {
+        name: 'MS 24',
+        img: plaster23,
+      },
+      {
+        name: 'MS 25',
+        img: plaster25,
+      },
+      {
+        name: 'MS 26',
+        img: plaster26,
+      },
+      {
+        name: 'MS 27',
+        img: plaster27,
+      },
+      {
+        name: 'MS 28',
+        img: plaster28,
+      },
+      {
+        name: 'MS 29',
+        img: plaster29,
+      },
+      {
+        name: 'MS 30',
+        img: plaster30,
+      },
+      {
+        name: 'MS 31',
+        img: plaster31,
+      },
+      {
+        name: 'MS 32',
+        img: plaster32,
+      },
+      {
+        name: 'MS 33',
+        img: plaster33,
+      },
+      {
+        name: 'MS 34',
+        img: plaster34,
+      },
+      {
+        name: 'MS 35',
+        img: plaster35,
+      },
+      {
+        name: 'MS 36',
+        img: plaster36,
+      },
+      {
+        name: 'MS 37',
+        img: plaster37,
+      },
+    ],
   },
   {
     id: 'chipped',
@@ -175,17 +556,237 @@ export const MATERIALS_DATA = [
     Даже при малой толщине панелей, мы добились абсолютного сходства каменного скола со своим природным собратом. Даже на ощупь - это самый настоящий камень: плотный, твердый и прочный\n
     Оформить каменным сколом можно и горизонтальные поверхности, и вертикальные. Применение практически ничем не ограничено. Закрепить каменный скол можно на любой поверхности: дизайнерская мебель, дверцы шкафа, ванная, барная стойка, стены изнутри, фасады дома и т.д..\n
     Именно на стенах чаще всего можно увидеть каменный скол, причем используют его не только в квартирах, но и в офисах, административных помещениях, бутиках.`,
-    colors: [chipped1, chipped2, chipped3],
+    colors: [
+      {
+        name: 'SP 01',
+        img: chipped1,
+      },
+      {
+        name: 'SP 02',
+        img: chipped2,
+      },
+      {
+        name: 'SP 03',
+        img: chipped3,
+      },
+      {
+        name: 'SP 04',
+        img: chipped4,
+      },
+      {
+        name: 'SP 05',
+        img: chipped5,
+      },
+      {
+        name: 'SP 06',
+        img: chipped6,
+      },
+      {
+        name: 'SP 07',
+        img: chipped7,
+      },
+      {
+        name: 'SP 08',
+        img: chipped8,
+      },
+      {
+        name: 'SP 09',
+        img: chipped9,
+      },
+      {
+        name: 'SP 10',
+        img: chipped10,
+      },
+      {
+        name: 'SP 11',
+        img: chipped11,
+      },
+      {
+        name: 'SP 12',
+        img: chipped12,
+      },
+      {
+        name: 'SP 13',
+        img: chipped13,
+      },
+      {
+        name: 'SP 14',
+        img: chipped14,
+      },
+      {
+        name: 'SP 15',
+        img: chipped15,
+      },
+      {
+        name: 'SP 16',
+        img: chipped16,
+      },
+      {
+        name: 'SP 17',
+        img: chipped17,
+      },
+      {
+        name: 'SP 18',
+        img: chipped18,
+      },
+    ],
   },
   {
     id: 'veneer',
     title: 'Акриловый шпон',
     img: veneer,
+    alert:
+      'В данный момент мы изучаем спрос на материал. Если вас заинтересовало предложение, свяжитесь с нами для получение более подробной информации',
     description: `Тонкие глянцевые широкоформатные панели, имитирующие различные породы натурального камня с точностью рисунка на 99%.\n
     Он имеет малую толщину 1 мм и незначительный вес 1,2 кг/м2.\n
     При этом плиты акрилового шпона могут выполняться до размера 2000*3000 мм, что позволяет одним листом закрыть большую площадь стены.\n
     Цветовая гамма панелей очень разнообразна, что позволяет применять его в самых разных интерьерах.\n
     Является превосходным материалом для создания эксклюзивных дизайнерских элементов интерьера`,
-    colors: [veneer1, veneer2],
+    colors: [
+      {
+        name: 'AS 01',
+        img: veneer1,
+      },
+      {
+        name: 'AS 03',
+        img: veneer3,
+      },
+      {
+        name: 'AS 04',
+        img: veneer4,
+      },
+      {
+        name: 'AS 05',
+        img: veneer5,
+      },
+      {
+        name: 'AS 07',
+        img: veneer7,
+      },
+      {
+        name: 'AS 08',
+        img: veneer8,
+      },
+      {
+        name: 'AS 09',
+        img: veneer9,
+      },
+      {
+        name: 'AS 11',
+        img: veneer11,
+      },
+      {
+        name: 'AS 12',
+        img: veneer12,
+      },
+      {
+        name: 'AS 13',
+        img: veneer13,
+      },
+      {
+        name: 'AS 14',
+        img: veneer14,
+      },
+      {
+        name: 'AS 15',
+        img: veneer15,
+      },
+      {
+        name: 'AS 16',
+        img: veneer16,
+      },
+      {
+        name: 'AS 17',
+        img: veneer17,
+      },
+      {
+        name: 'AS 18',
+        img: veneer18,
+      },
+      {
+        name: 'AS 19',
+        img: veneer19,
+      },
+      {
+        name: 'AS 22',
+        img: veneer22,
+      },
+      {
+        name: 'AS 23',
+        img: veneer23,
+      },
+      {
+        name: 'AS 24',
+        img: veneer24,
+      },
+      {
+        name: 'AS 29',
+        img: veneer29,
+      },
+      {
+        name: 'AS 31',
+        img: veneer31,
+      },
+      {
+        name: 'AS 34',
+        img: veneer34,
+      },
+      {
+        name: 'AS 36',
+        img: veneer36,
+      },
+      {
+        name: 'AS 37',
+        img: veneer37,
+      },
+      {
+        name: 'AS 39',
+        img: veneer39,
+      },
+      {
+        name: 'AS 41',
+        img: veneer41,
+      },
+      {
+        name: 'AS 44',
+        img: veneer44,
+      },
+      {
+        name: 'AS 47',
+        img: veneer47,
+      },
+      {
+        name: 'AS 48',
+        img: veneer48,
+      },
+      {
+        name: 'AS 49',
+        img: veneer49,
+      },
+      {
+        name: 'AS 60',
+        img: veneer60,
+      },
+      {
+        name: 'AS 86',
+        img: veneer86,
+      },
+      {
+        name: 'AS 88',
+        img: veneer88,
+      },
+      {
+        name: 'AS 89',
+        img: veneer89,
+      },
+      {
+        name: 'AS 90',
+        img: veneer90,
+      },
+      {
+        name: 'AS 91',
+        img: veneer91,
+      },
+    ],
   },
 ]
