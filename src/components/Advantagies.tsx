@@ -24,7 +24,7 @@ export const Advantangies = () => {
           {ADVANTAGE_DATA.map((e, i) => (
             <div
               key={i}
-              className="grid grid-cols-3 gap-4 justify-evenly bg-gradient-to-br from-x-gray to-slate-800 text-zinc-300 rounded-md shadow-xl mx-4 p-4 h-full"
+              className="grid grid-cols-3 gap-4 justify-evenly bg-zinc-300 rounded-md shadow-xl mx-4 p-4 h-full"
             >
               <div className="flex flex-col gap-2 items-center self-center">
                 <img src={e.img} alt="fire" />

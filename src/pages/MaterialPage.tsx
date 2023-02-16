@@ -10,11 +10,11 @@ export const MaterialPage = () => {
       {MATERIALS_DATA.filter((e) => e.id === params.id).map((e) => (
         <article key={e.id} className="max-w-7xl mx-auto py-8">
           <h2 className="text-2xl font-bold">{e.title}</h2>
-          <section className="grid grid-cols-2 gap-4 px-20 py-4 place-items-center">
-            <div className="translate-x-20 shadow-lg">
-              <img src={e.img} alt="img" />
+          <section className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap md:gap-4 px-2 md:px-20 py-4 place-items-center">
+            <div className="shadow-lg">
+              <img src={e.img} alt="img" className='w-96 md:w-full' />
             </div>
-            <div className="p-4 bg-x-white -translate-x-20 shadow-xl flex flex-col bg-gradient-to-br from-x-gray to-slate-800 text-zinc-300 rounded-md gap-2">
+            <div className="p-4 shadow-xl flex flex-col bg-zinc-300 rounded-md gap-2 h-full justify-center">
               {toValidText(e.description)}
             </div>
           </section>
@@ -37,8 +37,8 @@ export const MaterialPage = () => {
                 ))}
             </div>
           </Section>
-          <Section id={e.id} title="Каталог товара">
-            <div></div>
+          <Section id={e.id} title="Каталог товара" className="px-4">
+            <embed src={e.file} type="application/pdf" width="100%" height="600px" />
           </Section>
         </article>
       ))}

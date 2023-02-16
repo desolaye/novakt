@@ -22,13 +22,6 @@ const responsive = {
   },
 }
 
-const responsive2 = {
-  desktop: {
-    breakpoint: { max: 3000, min: 0 },
-    items: 1,
-  },
-}
-
 export const MainPage = () => {
   return (
     <>
@@ -46,22 +39,10 @@ export const MainPage = () => {
       </Section>
       <Section id="photos" title="Фото галерея">
         <div className="relative max-w-7xl mx-auto">
-          <p className="py-4">Вариант 1:</p>
           <Carousel slidesToSlide={2} responsive={responsive} infinite={true}>
             {GALLERY_DATA.map((e, i) => (
               <img
                 className="w-80 h-64 xl:w-[600px] xl:h-[400px] mx-auto rounded shadow-sm"
-                key={i}
-                src={e}
-                alt="gallery"
-              />
-            ))}
-          </Carousel>
-          <p className="py-4">Вариант 2:</p>
-          <Carousel responsive={responsive2} infinite={true}>
-            {GALLERY_DATA.map((e, i) => (
-              <img
-                className="w-80 h-64 xl:w-[950px] xl:h-[600px] mx-auto rounded shadow-sm"
                 key={i}
                 src={e}
                 alt="gallery"

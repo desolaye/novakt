@@ -5,6 +5,12 @@ import plaster from '@/assets/images/materials/plaster.jpg'
 import chipped from '@/assets/images/materials/chipped.jpg'
 import veneer from '@/assets/images/materials/veneer.jpg'
 
+import stonePdf from '@/assets/catalogs/stone.pdf'
+import brickPdf from '@/assets/catalogs/brick.pdf'
+import plasterPdf from '@/assets/catalogs/plaster.pdf'
+import chippedPdf from '@/assets/catalogs/chipped.pdf'
+import veneerPdf from '@/assets/catalogs/veneer.pdf'
+
 import brick1 from '@/assets/images/materials/brick/1.png'
 import brick2 from '@/assets/images/materials/brick/2.png'
 import brick3 from '@/assets/images/materials/brick/3.png'
@@ -94,7 +100,6 @@ import chipped16 from '@/assets/images/materials/chipped/16.jpeg'
 import chipped17 from '@/assets/images/materials/chipped/17.jpeg'
 import chipped18 from '@/assets/images/materials/chipped/18.jpeg'
 
-import panels1 from '@/assets/images/materials/panels/1.png'
 import panels2 from '@/assets/images/materials/panels/2.png'
 import panels3 from '@/assets/images/materials/panels/3.png'
 import panels4 from '@/assets/images/materials/panels/4.png'
@@ -104,11 +109,7 @@ import panels7 from '@/assets/images/materials/panels/7.png'
 import panels8 from '@/assets/images/materials/panels/8.png'
 import panels9 from '@/assets/images/materials/panels/9.png'
 import panels10 from '@/assets/images/materials/panels/10.png'
-import panels11 from '@/assets/images/materials/panels/11.png'
-import panels12 from '@/assets/images/materials/panels/12.png'
 import panels13 from '@/assets/images/materials/panels/13.png'
-import panels14 from '@/assets/images/materials/panels/14.png'
-import panels15 from '@/assets/images/materials/panels/15.png'
 import panels16 from '@/assets/images/materials/panels/16.png'
 import panels17 from '@/assets/images/materials/panels/17.png'
 
@@ -164,78 +165,79 @@ export const MATERIALS_DATA = [
     Срок службы от 30 лет`,
     colors: [
       {
-        name: 'MK 05',
-        img: stone1,
-      },
-      {
-        name: 'MK 04',
-        img: stone2,
-      },
-      {
-        name: 'MK 03',
-        img: stone3,
+        name: 'MK 01',
+        img: stone5,
       },
       {
         name: 'MK 02',
         img: stone4,
       },
       {
-        name: 'MK 01',
-        img: stone5,
+        name: 'MK 03',
+        img: stone3,
       },
       {
-        name: 'NT 06',
-        img: stone6,
+        name: 'MK 04',
+        img: stone2,
       },
       {
-        name: 'NT 05',
-        img: stone7,
-      },
-      {
-        name: 'NT 04',
-        img: stone8,
-      },
-      {
-        name: 'NT 03',
-        img: stone9,
-      },
-      {
-        name: 'NT 02',
-        img: stone10,
+        name: 'MK 05',
+        img: stone1,
       },
       {
         name: 'NT 01',
         img: stone11,
       },
       {
-        name: 'GS 07',
-        img: stone12,
+        name: 'NT 02',
+        img: stone10,
       },
       {
-        name: 'GS 06',
-        img: stone13,
+        name: 'NT 03',
+        img: stone9,
       },
       {
-        name: 'GS 05',
-        img: stone14,
+        name: 'NT 04',
+        img: stone8,
       },
       {
-        name: 'GS 04',
-        img: stone15,
+        name: 'NT 05',
+        img: stone7,
       },
       {
-        name: 'GS 03',
-        img: stone16,
+        name: 'NT 06',
+        img: stone6,
+      },
+      {
+        name: 'GS 01',
+        img: stone18,
       },
       {
         name: 'GS 02',
         img: stone17,
       },
       {
-        name: 'GS 01',
-        img: stone18,
+        name: 'GS 03',
+        img: stone16,
+      },
+      {
+        name: 'GS 04',
+        img: stone15,
+      },
+      {
+        name: 'GS 05',
+        img: stone14,
+      },
+      {
+        name: 'GS 06',
+        img: stone13,
+      },
+      {
+        name: 'GS 07',
+        img: stone12,
       },
     ],
+    file: stonePdf,
   },
   {
     id: 'brick',
@@ -250,58 +252,59 @@ export const MATERIALS_DATA = [
     Морозостойкость F70, Срок службы от 30 лет`,
     colors: [
       {
-        name: '',
+        name: 'KG 9',
         img: brick1,
       },
       {
-        name: '',
+        name: 'KO 1',
         img: brick2,
       },
       {
-        name: '',
+        name: 'KB 4',
         img: brick3,
       },
       {
-        name: '',
+        name: 'KP 4',
         img: brick4,
       },
       {
-        name: '',
+        name: 'KG 3',
         img: brick5,
       },
       {
-        name: '',
+        name: 'KP 5',
         img: brick6,
       },
       {
-        name: '',
+        name: 'KR 1',
         img: brick7,
       },
       {
-        name: '',
+        name: 'KG 1',
         img: brick8,
       },
       {
-        name: '',
+        name: 'KO 3',
         img: brick9,
       },
       {
-        name: '',
+        name: 'KP 10',
         img: brick10,
       },
       {
-        name: '',
+        name: 'KO 5',
         img: brick11,
       },
       {
-        name: '',
+        name: 'KP 15',
         img: brick12,
       },
       {
-        name: '',
+        name: 'KB 4',
         img: brick13,
       },
     ],
+    file: brickPdf,
   },
   {
     id: 'panels',
@@ -315,71 +318,51 @@ export const MATERIALS_DATA = [
     Материал достаточно прочный и плотный, что позволяет его  использовать даже в суровых атмосферных условиях.`,
     colors: [
       {
-        name: '',
-        img: panels1,
-      },
-      {
-        name: '',
+        name: 'KP 4',
         img: panels2,
       },
       {
-        name: '',
+        name: 'KG 1',
         img: panels3,
       },
       {
-        name: '',
+        name: 'KG 9',
         img: panels4,
       },
       {
-        name: '',
+        name: 'KP 5',
         img: panels5,
       },
       {
-        name: '',
+        name: 'KG 3',
         img: panels6,
       },
       {
-        name: '',
+        name: 'KP 2',
         img: panels7,
       },
       {
-        name: '',
+        name: 'KR 4',
         img: panels8,
       },
       {
-        name: '',
+        name: 'KG 4',
         img: panels9,
       },
       {
-        name: '',
+        name: 'KB 9',
         img: panels10,
       },
       {
-        name: '',
-        img: panels11,
-      },
-      {
-        name: '',
-        img: panels12,
-      },
-      {
-        name: '',
+        name: 'KO 5',
         img: panels13,
       },
       {
-        name: '',
-        img: panels14,
-      },
-      {
-        name: '',
-        img: panels15,
-      },
-      {
-        name: '',
+        name: 'KB2',
         img: panels16,
       },
       {
-        name: '',
+        name: 'KP 15',
         img: panels17,
       },
     ],
@@ -540,6 +523,7 @@ export const MATERIALS_DATA = [
         img: plaster37,
       },
     ],
+    file: plasterPdf,
   },
   {
     id: 'chipped',
@@ -630,6 +614,7 @@ export const MATERIALS_DATA = [
         img: chipped18,
       },
     ],
+    file: chippedPdf,
   },
   {
     id: 'veneer',
@@ -788,5 +773,6 @@ export const MATERIALS_DATA = [
         img: veneer91,
       },
     ],
+    file: veneerPdf,
   },
 ]

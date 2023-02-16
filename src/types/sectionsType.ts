@@ -10,4 +10,5 @@ export type SectionType = {
   title: string
   secondary?: boolean
   children?: ReactElement
+  className?: string
 }
