@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const MaterialCards = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-4 max-w-7xl mx-auto px-8">
+    <div className="grid lg:grid-cols-2 gap-4 max-w-7xl mx-auto px-2 md:px-8">
       {MATERIALS_DATA.map((e) => (
         <Link
           key={e.id}

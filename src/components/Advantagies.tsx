@@ -19,7 +19,7 @@ const responsive = {
 export const Advantangies = () => {
   return (
     <>
-      <div className="relative max-w-7xl px-14 mx-auto">
+      <div className="relative max-w-7xl px-4 md:px-14 mx-auto">
         <Carousel responsive={responsive} infinite={true}>
           {ADVANTAGE_DATA.map((e, i) => (
             <div
@@ -38,8 +38,8 @@ export const Advantangies = () => {
         </Carousel>
       </div>
 
-      <div className="grid grid-rows-2 py-8 gap-12 place-items-center">
-        <div className="max-w-4xl bg-x-red flex flex-col justify-center gap-8 p-4">
+      <div className="grid md:grid-rows-2 py-8 px-2 gap-4 md:gap-12 place-items-center">
+        <div className="max-w-4xl bg-x-red flex flex-col justify-center gap-8 p-4 rounded">
           <p className="text-white text-xl uppercase font-bold text-center">
             Для дизайнеров, архитекторов и строителей специальные условия!
           </p>
@@ -49,7 +49,7 @@ export const Advantangies = () => {
           </button>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {ADVANTAGE_DATA_2.map((e, i) => (
             <div key={i} className="flex flex-col gap-2 max-w-[220px]">
               <div className="flex gap-2">

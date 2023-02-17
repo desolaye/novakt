@@ -39,7 +39,7 @@ export const MainPage = () => {
       </Section>
       <Section id="photos" title="Фото галерея">
         <div className="relative max-w-7xl mx-auto">
-          <Carousel slidesToSlide={2} responsive={responsive} infinite={true}>
+          <Carousel slidesToSlide={1} responsive={responsive} infinite={true}>
             {GALLERY_DATA.map((e, i) => (
               <img
                 className="w-80 h-64 xl:w-[600px] xl:h-[400px] mx-auto rounded shadow-sm"
@@ -56,7 +56,7 @@ export const MainPage = () => {
       </Section>
       <Section id="variants" title="Варианты применения">
         <>
-          <div className="grid grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
             {VARIANTS_DATA.map((e, i) => (
               <div
                 key={i}
@@ -69,7 +69,7 @@ export const MainPage = () => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 place-items-center gap-8 max-w-3xl mx-auto px-4 py-12">
+          <div className="grid md:grid-cols-2 place-items-center gap-8 max-w-3xl mx-auto px-4 py-12">
             {VARIANTS_DATA.map((e, i) => (
               <div
                 key={i}

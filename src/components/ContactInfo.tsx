@@ -8,11 +8,11 @@ import map from '@/assets/images/map.png'
 
 export const ContactInfo = () => {
   return (
-    <div className="text-x-white pb-8 flex flex-col lg:flex-row justify-center align-middle lg:justify-evenly gap-4">
+    <div className="text-x-white pb-8 px-2 flex flex-col lg:flex-row justify-center align-middle lg:justify-evenly gap-4">
       <div>
         <div className="flex justify-center">
           <img
-            className="max-w-[750px] shadow-lg rounded"
+            className="max-w-[750px] w-full shadow-lg rounded"
             src="https://betterproposals.io/blog/wp-content/uploads/2022/11/x-email-tips.png"
             alt="map"
           />
