@@ -8,7 +8,7 @@ import {
   NavBar,
 } from '@/components'
 
-import { GALLERY_DATA, VARIANTS_DATA } from '@/data'
+import { GALLERY_DATA, SECTIONS_DATA, VARIANTS_DATA } from '@/data'
 import house from '@/assets/images/dom_2.jpg'
 
 const responsive = {
@@ -25,7 +25,7 @@ const responsive = {
 export const MainPage = () => {
   return (
     <>
-      <NavBar />
+      <NavBar data={SECTIONS_DATA} />
       <section className="h-[50vh] relative">
         <h2 className="absolute select-none z-10 text-white top-8 left-8 text-center text-3xl">
           Производим современные отделочные материалы

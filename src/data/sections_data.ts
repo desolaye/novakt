@@ -30,3 +30,14 @@ export const SECTIONS_DATA: SectionsType[] = [
     title: 'Контакты',
   },
 ]
+
+export const MATERIALS_NAV_DATA: SectionsType[] = [
+  {
+    id: '',
+    title: 'Главная',
+  },
+  {
+    id: 'question',
+    title: 'Задать вопрос',
+  },
+]

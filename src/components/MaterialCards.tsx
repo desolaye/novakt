@@ -8,7 +8,7 @@ export const MaterialCards = () => {
       {MATERIALS_DATA.map((e) => (
         <Link
           key={e.id}
-          to={e.id}
+          to={'/' + e.id}
           className="bg-x-white grid grid-cols-2 shadow-xl rounded-sm hover:scale-95 hover:shadow-inner focus:scale-95 focus:shadow-inner transition-all max-h-96 overflow-hidden"
         >
           <div className="p-6 flex flex-col justify-between">

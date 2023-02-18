@@ -1,5 +1,5 @@
 import { MainLayout } from '@/layouts'
-import { MainPage, MaterialPage } from '@/pages'
+import { CatalogPage, MainPage, MaterialPage } from '@/pages'
 import { createBrowserRouter } from 'react-router-dom'
 
 export const Router = createBrowserRouter([
@@ -16,6 +16,14 @@ export const Router = createBrowserRouter([
     element: (
       <MainLayout>
         <MaterialPage />
+      </MainLayout>
+    ),
+  },
+  {
+    path: '/catalog',
+    element: (
+      <MainLayout>
+        <CatalogPage />
       </MainLayout>
     ),
   },
