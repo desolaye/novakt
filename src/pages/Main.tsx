@@ -10,6 +10,7 @@ import {
 
 import { GALLERY_DATA, SECTIONS_DATA, VARIANTS_DATA } from '@/data'
 import house from '@/assets/images/dom_2.jpg'
+import variants from '@/assets/images/variants.png'
 
 const responsive = {
   desktop: {
@@ -56,6 +57,9 @@ export const MainPage = () => {
       </Section>
       <Section id="variants" title="Варианты применения">
         <>
+          <div>
+            <img className="h-full w-full object-cover" src={variants} alt="Variants" />
+          </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
             {VARIANTS_DATA.map((e, i) => (
               <div

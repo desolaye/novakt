@@ -12,7 +12,10 @@ export const MaterialCards = () => {
           className="bg-x-white grid grid-cols-2 shadow-xl rounded-sm hover:scale-95 hover:shadow-inner focus:scale-95 focus:shadow-inner transition-all max-h-96 overflow-hidden"
         >
           <div className="p-6 flex flex-col justify-between">
+            <div className='flex flex-col gap-1'>
             <h4 className="text-xl font-bold">{e.title}</h4>
+<p></p>
+            </div>
             <button className="flex gap-2 items-center">
               <p className="text-lg tracking-wide">Подробнее</p>
               <Icon20ChevronRight />

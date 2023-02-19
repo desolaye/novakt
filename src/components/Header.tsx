@@ -12,7 +12,7 @@ export const Header = () => {
       </section>
       <section>
         <h1 className="text-lg lg:text-2xl tracking-wide font-light text-center">
-          Novak Techonology
+          Novak Decor NSK
         </h1>
       </section>
       <section className="flex flex-col-reverse lg:flex-row">

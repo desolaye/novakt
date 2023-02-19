@@ -112,6 +112,25 @@ import panels10 from '@/assets/images/materials/panels/10.png'
 import panels13 from '@/assets/images/materials/panels/13.png'
 import panels16 from '@/assets/images/materials/panels/16.png'
 import panels17 from '@/assets/images/materials/panels/17.png'
+import panels18 from '@/assets/images/materials/panels/18.png'
+import panels19 from '@/assets/images/materials/panels/19.png'
+import panels20 from '@/assets/images/materials/panels/20.png'
+import panels21 from '@/assets/images/materials/panels/21.png'
+import panels22 from '@/assets/images/materials/panels/22.png'
+import panels23 from '@/assets/images/materials/panels/23.png'
+import panels24 from '@/assets/images/materials/panels/24.png'
+import panels25 from '@/assets/images/materials/panels/25.png'
+import panels26 from '@/assets/images/materials/panels/26.png'
+import panels27 from '@/assets/images/materials/panels/27.png'
+import panels28 from '@/assets/images/materials/panels/28.png'
+import panels29 from '@/assets/images/materials/panels/29.png'
+import panels30 from '@/assets/images/materials/panels/30.png'
+import panels31 from '@/assets/images/materials/panels/31.png'
+import panels32 from '@/assets/images/materials/panels/32.png'
+import panels33 from '@/assets/images/materials/panels/33.png'
+import panels34 from '@/assets/images/materials/panels/34.png'
+import panels35 from '@/assets/images/materials/panels/35.png'
+import panels36 from '@/assets/images/materials/panels/36.png'
 
 import plaster1 from '@/assets/images/materials/plaster/1.jpeg'
 import plaster2 from '@/assets/images/materials/plaster/2.jpeg'
@@ -155,13 +174,15 @@ export const MATERIALS_DATA = [
   {
     id: 'stone',
     title: 'Гибкий камень',
+    price: 'от 900 руб/кв.м.',
     img: stone,
     description: `Эксклюзивный отделочный материал для вашего интерьера и фасада.\n
-    Он изготавливается из экологически чистых материалов и имеет все необходимые сертификаты.\n
-    Гибкий камень применяется: на стенах, полах, ступенях, в ванных комнатах, бассейнах, саунах, витражах, кухонных фартуках и т.д.\n
+    Он характеризуется не только визуальным сходством с природным камнем, но и ничуть не уступает по износостойкости, а еще и превосходит в цене.\n
+    Он изготавливается из современных экологически чистых материалов, которые позволяют достигнуть высокой гибкости и прочности.\n
+    Все выше перечисленные качества и высокие декоративные характеристики материала позволяют расширить сферу его использования: на стенах, полах, ступенях, в ванных комнатах, бассейнах, саунах, каминах, витражах, кухонных фартуках, барных стоек и т.д.\n
     Размер листа - 950х550 мм, площадь листа – 0,52 кв.м\n
     Толщина - 1,5 мм, Вес - 1,5 кг/м2\n
-    Эксплуатация от -60°С до +85°С, Морозостойкость F70\n
+    Эксплуатация от -60°С до +85°С,Морозостойкость F70\n
     Срок службы от 30 лет`,
     colors: [
       {
@@ -242,6 +263,7 @@ export const MATERIALS_DATA = [
   {
     id: 'brick',
     title: 'Гибкий кирпич',
+    price: 'от 1100 руб/кв.м.',
     img: brick,
     description: `Cовременный эластичный строительный материал со стойкой защитой от любого механического воздействия со стороны.\n
     Кирпич легко гнётся, благодаря чему его используют в отделке не только внешних и внутренних стен помещения, но и колонн, арочных конструкций, любых ниш и выступов разной формы.\n
@@ -309,6 +331,7 @@ export const MATERIALS_DATA = [
   {
     id: 'panels',
     title: 'Термопанели (кирпич и камень)',
+    price: 'от 1150 руб/кв.м.',
     img: panels,
     description: `Инновационный строительный материал с комплексным подходом к утеплению и облицовке фасадов, лоджий и балконов.\n\n
     С их помощью вы за короткое время сможете придать оригинальный облик вашего дома и сделать его существенно теплее.`,
@@ -318,36 +341,44 @@ export const MATERIALS_DATA = [
     Материал достаточно прочный и плотный, что позволяет его  использовать даже в суровых атмосферных условиях.`,
     colors: [
       {
-        name: 'KP 4',
-        img: panels2,
-      },
-      {
         name: 'KG 1',
         img: panels3,
-      },
-      {
-        name: 'KG 9',
-        img: panels4,
-      },
-      {
-        name: 'KP 5',
-        img: panels5,
       },
       {
         name: 'KG 3',
         img: panels6,
       },
       {
+        name: 'KG 4',
+        img: panels9,
+      },
+      {
+        name: 'KG 9',
+        img: panels4,
+      },
+      {
         name: 'KP 2',
         img: panels7,
       },
       {
-        name: 'KR 4',
-        img: panels8,
+        name: 'KP 4',
+        img: panels2,
       },
       {
-        name: 'KG 4',
-        img: panels9,
+        name: 'KP 5',
+        img: panels5,
+      },
+      {
+        name: 'KP 15',
+        img: panels17,
+      },
+      {
+        name: 'KB 2',
+        img: panels16,
+      },
+      {
+        name: 'KR 4',
+        img: panels8,
       },
       {
         name: 'KB 9',
@@ -358,18 +389,87 @@ export const MATERIALS_DATA = [
         img: panels13,
       },
       {
-        name: 'KB2',
-        img: panels16,
+        name: 'GS 01',
+        img: panels18,
       },
       {
-        name: 'KP 15',
-        img: panels17,
+        name: 'GS 02',
+        img: panels19,
+      },
+      {
+        name: 'GS 03',
+        img: panels20,
+      },
+      {
+        name: 'GS 04',
+        img: panels21,
+      },
+      {
+        name: 'GS 05',
+        img: panels22,
+      },
+      {
+        name: 'GS 06',
+        img: panels23,
+      },
+      {
+        name: 'GS 07',
+        img: panels24,
+      },
+      {
+        name: 'MK 01',
+        img: panels25,
+      },
+      {
+        name: 'MK 02',
+        img: panels26,
+      },
+      {
+        name: 'MK 03',
+        img: panels27,
+      },
+      {
+        name: 'MK 04',
+        img: panels28,
+      },
+      {
+        name: 'MK 05',
+        img: panels29,
+      },
+      {
+        name: 'NT 01',
+        img: panels30,
+      },
+      {
+        name: 'NT 02',
+        img: panels31,
+      },
+      {
+        name: 'NT 03',
+        img: panels32,
+      },
+      {
+        name: 'NT 04',
+        img: panels33,
+      },
+      {
+        name: 'NT 05',
+        img: panels34,
+      },
+      {
+        name: 'NT 06',
+        img: panels35,
+      },
+      {
+        name: 'NT 07',
+        img: panels36,
       },
     ],
   },
   {
     id: 'plaster',
     title: 'Мраморная штукатурка',
+    price: 'от 2200 руб/шт',
     img: plaster,
     description: `В настоящее время мраморную крошку используют для воплощения самых смелых дизайнерских идей: в историческом, классическом или ультрамодном стилях.\n\n
     Различные оттенки природных и искусственных цветов использования при производстве (от самых светлых до темных)позволяют создавать оригинальные узоры, рисунки, орнаменты, выделять отдельные элементы или оставлять покрытие как основу`,
@@ -528,6 +628,7 @@ export const MATERIALS_DATA = [
   {
     id: 'chipped',
     title: 'Каменный скол',
+    price: 'от 1900 руб/кв.м.',
     img: chipped,
     description: `Экологичный декоративный материал, который полностью копирует срез натурального камня.\n
     Под “копирует срез” имеется в виду не только сам рисунок, но и рельеф.\n
@@ -619,6 +720,7 @@ export const MATERIALS_DATA = [
   {
     id: 'veneer',
     title: 'Акриловый шпон',
+    price: 'от 3500 руб/м',
     img: veneer,
     alert: `В данный момент мы изучаем спрос на материал.\n\n
       Если вас заинтересовало предложение, свяжитесь с нами для получение более подробной информации`,
@@ -774,5 +876,14 @@ export const MATERIALS_DATA = [
       },
     ],
     file: veneerPdf,
+  },
+  {
+    id: 'decorative',
+    title: 'Декоративная штукатурка',
+    description: `Декоративная штукатурка – это эластичная дисперсионная, готовая к применению, структурная паста, которая используется для финишной декоративной отделки при внутренних и наружных работах.\n
+    Декоративная штукатурка легко наносится как на ровные поверхности, так и на разные архитектурные элементы.\n
+    В зависимости от способа нанесения и последующей обработки дает возможность получать различные цветовые и художественные композиции. После высыхания образует «дышащее» декоративное рельефное покрытие, которое обладает высокой прочностью и стойкостью. Используется при отделке офисов, гостиниц, кафе, больниц, школ и жилых помещений.\n
+    Фасовка – ведра по 15 кг. Расход 1-2 кг/кв.м. Базовый цвет – белый.\n
+    Колеруется в различные цветовые тона.\n`,
   },
 ]
