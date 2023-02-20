@@ -33,28 +33,35 @@ export const MaterialPage = () => {
               {toValidText(e.description)}
             </div>
           </section>
-          {e.moreDescription && (
-            <Section id="moreDescription" title="Полное описание">
-              <div className="text-lg px-4 flex flex-col gap-1">
-                {toValidText(e.moreDescription)}
-              </div>
-            </Section>
-          )}
-
-          <Section id="colors" title="Цветовые решения">
-            <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
-              {e.colors &&
-                e.colors.map((e, i) => (
+          {e.colors && (
+            <Section id="colors" title="Цветовые решения">
+              <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
+                {e.colors.map((e, i) => (
                   <div className="flex flex-col gap-2 items-center">
                     <img key={i} src={e.img} alt="img" className="h-full" />
                     <p>{e.name}</p>
                   </div>
                 ))}
-            </div>
-          </Section>
-          <Section id={e.id} title="Каталог товара" className="px-4">
-            <embed src={e.file} type="application/pdf" width="100%" height="600px" />
-          </Section>
+              </div>
+            </Section>
+          )}
+          {e.effects && (
+            <Section id="colors" title="Декоративные эффекты">
+              <div className="grid grid-cols-2 gap-8 px-2">
+                {e.effects.map((e, i) => (
+                  <div className="flex flex-col gap-2 items-center">
+                    <img key={i} src={e.img} alt="img" className="h-[500px] w-full" />
+                    <p>{e.id}</p>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+          {e.file && (
+            <Section id={e.id} title="Каталог товара" className="px-4">
+              <embed src={e.file} type="application/pdf" width="100%" height="600px" />
+            </Section>
+          )}
         </article>
       ))}
     </>

@@ -11,11 +11,7 @@ export const ContactInfo = () => {
     <div className="text-x-white pb-8 px-2 flex flex-col lg:flex-row justify-center align-middle lg:justify-evenly gap-4">
       <div>
         <div className="flex justify-center">
-          <img
-            className="max-w-[750px] w-full shadow-lg rounded"
-            src="https://betterproposals.io/blog/wp-content/uploads/2022/11/x-email-tips.png"
-            alt="map"
-          />
+          <img className="max-w-[750px] w-full shadow-lg rounded" src={map} alt="map" />
         </div>
       </div>
       <div className="self-center">
@@ -26,21 +22,21 @@ export const ContactInfo = () => {
             <Icon24PhoneOutline />
             <div>
               <p>Звоните по номеру:</p>
-              <p>+ 7 (967) 500-04-65</p>
+              <p>+7 (913) 756-72-10</p>
             </div>
           </div>
           <div className="flex gap-4">
             <Icon24LocationMapOutline />
             <div>
               <p>Мы находимся по адресу:</p>
-              <p>г. Саратов, ул. Усть-Курдюмская, д. 12</p>
+              <p>г. Новосибирск, ул. Фабричная, д.4</p>
             </div>
           </div>
           <div className="flex gap-4">
             <Icon24MailOutline />
             <div>
-              <p>Для писем и предложений</p>
-              <p>example@mail.ru</p>
+              <p>Для писем и предложений:</p>
+              <p>info@novakdecor-nsk.ru</p>
             </div>
           </div>
         </div>

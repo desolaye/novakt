@@ -9,8 +9,13 @@ import {
 } from '@/components'
 
 import { GALLERY_DATA, SECTIONS_DATA, VARIANTS_DATA } from '@/data'
-import house from '@/assets/images/dom_2.jpg'
+
+import house1 from '@/assets/images/dom1.jpg'
+import house2 from '@/assets/images/dom2.jpg'
+import house3 from '@/assets/images/dom3.jpg'
+
 import variants from '@/assets/images/variants.png'
+import variants2 from '@/assets/images/variants2.jpg'
 
 const responsive = {
   desktop: {
@@ -28,12 +33,16 @@ export const MainPage = () => {
     <>
       <NavBar data={SECTIONS_DATA} />
       <section className="h-[50vh] relative">
-        <h2 className="absolute select-none z-10 text-white top-8 left-8 text-center text-3xl">
+        <h2 className="absolute select-none z-10 text-white top-[35%] left-[30%] text-center text-xl md:text-3xl">
           Производим современные отделочные материалы
           <br /> по гибким ценам
         </h2>
-        <img className="h-full w-full object-cover" src={house} alt="Home" />
-        <div className="absolute h-full w-full bg-x-gray top-0 left-0 opacity-40" />
+        <div className='flex h-full'>
+          <img className="h-full w-full object-cover" src={house1} alt="home" />
+          <img className="h-full w-full object-cover" src={house2} alt="home" />
+          <img className="h-full w-full object-cover" src={house3} alt="home" />
+        </div>
+        <div className="absolute h-full w-full bg-x-gray top-0 left-0 opacity-70" />
       </section>
       <Section id="weDo" title="Мы производим">
         <MaterialCards />
@@ -57,8 +66,9 @@ export const MainPage = () => {
       </Section>
       <Section id="variants" title="Варианты применения">
         <>
-          <div>
-            <img className="h-full w-full object-cover" src={variants} alt="Variants" />
+          <div className="flex flex-col md:flex-row gap-2 mx-auto max-w-7xl px-2">
+            <img className="h-full w-full" src={variants} alt="variants" />
+            <img className="h-auto w-full" src={variants2} alt="variants2" />
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
             {VARIANTS_DATA.map((e, i) => (
