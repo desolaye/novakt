@@ -47,3 +47,7 @@ textarea:focus {
 .react-multi-carousel-list {
   position: unset !important;
 }
+
+.react-multiple-carousel__arrow {
+  z-index: 10 !important;
+}

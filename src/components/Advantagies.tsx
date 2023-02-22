@@ -16,7 +16,7 @@ const responsive = {
   },
 }
 
-export const Advantangies = () => {
+export const Advantangies = ({ func }: { func?: () => void }) => {
   return (
     <>
       <div className="relative max-w-7xl px-4 md:px-14 mx-auto">
@@ -24,13 +24,13 @@ export const Advantangies = () => {
           {ADVANTAGE_DATA.map((e, i) => (
             <div
               key={i}
-              className="grid grid-cols-3 gap-4 justify-evenly bg-zinc-300 rounded-md shadow-xl mx-4 p-4 h-full"
+              className="grid place-items-center md:grid-cols-3 gap-4 justify-evenly bg-zinc-300 rounded-md shadow-xl mx-4 p-4 h-full"
             >
               <div className="flex flex-col gap-2 items-center self-center">
                 <img src={e.img} alt="fire" />
                 <p className="text-center font-bold text-lg">{e.title}</p>
               </div>
-              <div className="flex col-span-2 flex-col gap-2 self-center">
+              <div className="flex md:col-span-2 flex-col gap-2 self-center">
                 {toValidText(e.description)}
               </div>
             </div>
@@ -43,7 +43,10 @@ export const Advantangies = () => {
           <p className="text-white text-xl uppercase font-bold text-center">
             Для дизайнеров, архитекторов и строителей специальные условия!
           </p>
-          <button className="text-white self-end font-semibold flex gap-2 hover:gap-8 transition-all">
+          <button
+            onClick={func}
+            className="text-white self-end font-semibold flex gap-2 hover:gap-8 transition-all"
+          >
             <p>Узнать подробнее</p>
             <Icon24ArrowRightOutline className="self-center" />
           </button>

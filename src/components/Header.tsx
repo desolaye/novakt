@@ -1,12 +1,12 @@
-import { WhatsAppIcon, EmailIcon } from '@/assets/icons'
+import { WhatsAppIcon, EmailIcon, TelegramIcon } from '@/assets/icons'
 import logo from '@/assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
-    <header className="py-4 grid grid-cols-3 gap-4 bg-x-gray text-white place-items-center">
+    <header className="py-4 flex justify-evenly gap-4 bg-x-gray text-white place-items-center">
       <section>
-        <Link to={'/'}>
+        <Link to={'/'} className="hidden md:block">
           <img src={logo} className="w-16 lg:w-20" />
         </Link>
       </section>
@@ -23,8 +23,13 @@ export const Header = () => {
           <a href="mailto:info@novakdecor-nsk.ru" className="w-full">
             <EmailIcon />
           </a>
+          <a href="https://t.me/NOVAKDECORNSK" className="w-full">
+            <TelegramIcon fill="#fff" className="w-[24px] h-[24px]" />
+          </a>
         </div>
-        <div className="p-2">+ 7 (967) 500-04-65</div>
+        <a href="tel:+79675000465" className="p-2">
+          + 7 (967) 500-04-65
+        </a>
       </section>
     </header>
   )

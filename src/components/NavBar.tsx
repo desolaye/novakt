@@ -1,3 +1,4 @@
+import { WhatsAppIcon } from '@/assets/icons'
 import { MATERIALS_DATA } from '@/data'
 import { SectionsType } from '@/types'
 import { useEffect, useState } from 'react'
@@ -35,7 +36,16 @@ export const NavBar = ({ data }: { data: SectionsType[] }) => {
                 </div>
               </Link>
             )}
-            {e.id !== 'catalog' && e.id !== '' && (
+            {e.id === 'question' && (
+              <a
+                href="https://wa.me/89675000465"
+                target="_blank"
+                className="inline-block mx-2 py-4 px-2 cursor-pointer hover:text-x-red transition-all border-b-2 border-x-white hover:border-x-red"
+              >
+                {e.title}
+              </a>
+            )}
+            {e.id !== 'catalog' && e.id !== '' && e.id !== 'question' && (
               <ScrollLink key={i} to={e.id} smooth={true} duration={500}>
                 <div className="inline-block mx-2 py-4 px-2 cursor-pointer hover:text-x-red transition-all border-b-2 border-x-white hover:border-x-red">
                   {e.title}
@@ -53,7 +63,9 @@ export const NavBar = ({ data }: { data: SectionsType[] }) => {
         >
           {MATERIALS_DATA.map((e) => (
             <Link to={'/' + e.id}>
-              <p className="px-2 py-1 hover:bg-x-gray hover:text-x-white transition-all">{e.title}</p>
+              <p className="px-2 py-1 hover:bg-x-gray hover:text-x-white transition-all">
+                {e.title}
+              </p>
             </Link>
           ))}
         </div>

@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react'
 import Carousel from 'react-multi-carousel'
+
 import {
   Advantangies,
   BackForm,
@@ -16,6 +18,13 @@ import house3 from '@/assets/images/dom3.jpg'
 
 import variants from '@/assets/images/variants.png'
 import variants2 from '@/assets/images/variants2.jpg'
+import {
+  Icon24MailOutline,
+  Icon24PhoneOutline,
+  Icon24QuestionOutline,
+} from '@vkontakte/icons'
+
+import { encodedMail } from '@/utils/encodedMail'
 
 const responsive = {
   desktop: {
@@ -29,6 +38,27 @@ const responsive = {
 }
 
 export const MainPage = () => {
+  const [showPopUp, setShowPopUp] = useState(false)
+
+  const [mailInfo, setMailInfo] = useState({
+    userName: '',
+    phoneNumber: '',
+    mailTitle: '',
+    mailBody: '',
+  })
+
+  const checkInfo = (e: any) => {
+    setMailInfo((old) => ({ ...old, [e.target.name]: e.target.value }))
+  }
+
+  const popupHandler = () => {
+    setShowPopUp((old) => !old)
+  }
+
+  useEffect(() => {
+    document.body.style.overflow = showPopUp ? 'hidden' : 'auto'
+  }, [showPopUp])
+
   return (
     <>
       <NavBar data={SECTIONS_DATA} />
@@ -67,8 +97,29 @@ export const MainPage = () => {
           </Carousel>
         </div>
       </Section>
-      <Section id="advantage" title="Преимущество материалов">
-        <Advantangies />
+      <Section id="advantage" className="relative" title="Преимущество материалов">
+        <>
+          <Advantangies func={popupHandler} />
+          {showPopUp && (
+            <div
+              className="fixed z-50 top-0 w-full h-full bg-gray-700 bg-opacity-75 flex items-center justify-center"
+              onClick={popupHandler}
+            >
+              <div
+                className="bg-opacity-100 max-w-xl w-full"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div
+                  className="text-black w-full text-right text-2xl cursor-pointer"
+                  onClick={popupHandler}
+                >
+                  X
+                </div>
+                <BackForm />
+              </div>
+            </div>
+          )}
+        </>
       </Section>
       <Section id="variants" title="Варианты применения">
         <>
