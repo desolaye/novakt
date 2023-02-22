@@ -1,4 +1,3 @@
-import { WhatsAppIcon } from '@/assets/icons'
 import { MATERIALS_DATA } from '@/data'
 import { SectionsType } from '@/types'
 import { useEffect, useState } from 'react'
@@ -16,7 +15,7 @@ export const NavBar = ({ data }: { data: SectionsType[] }) => {
 
   return (
     <section className="bg-x-white text-x-gray overflow-x-scroll whitespace-nowrap hide-scroll w-full">
-      <div className="flex justify-evenly relative w-fit overflow-x-scroll whitespace-nowrap hide-scroll">
+      <div className="flex justify-evenly relative w-fit lg:w-full overflow-x-scroll whitespace-nowrap hide-scroll">
         {data.map((e, i) => (
           <>
             {e.id === 'catalog' && (
@@ -38,7 +37,7 @@ export const NavBar = ({ data }: { data: SectionsType[] }) => {
             )}
             {e.id === 'question' && (
               <a
-                href="https://wa.me/89675000465"
+                href="https://wa.me/+79137567210"
                 target="_blank"
                 className="inline-block mx-2 py-4 px-2 cursor-pointer hover:text-x-red transition-all border-b-2 border-x-white hover:border-x-red"
               >

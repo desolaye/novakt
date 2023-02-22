@@ -12,7 +12,7 @@ export const MaterialPage = () => {
       {MATERIALS_DATA.filter((e) => e.id === params.id).map((e) => (
         <article key={e.id} className="max-w-7xl mx-auto py-8">
           <header className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold">{e.title}</h2>
+            <h2 className="text-2xl font-bold text-center">{e.title}</h2>
             {e.alert && (
               <div className="mx-auto max-w-4xl bg-x-red flex flex-col justify-center gap-4 p-4 rounded">
                 <div className="text-white text-xl uppercase font-semibold flex flex-col gap-1 h-full justify-center">
@@ -38,7 +38,7 @@ export const MaterialPage = () => {
               <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 px-2">
                 {e.colors.map((e, i) => (
                   <div className="flex flex-col gap-2 items-center">
-                    <img key={i} src={e.img} alt="img" className="h-full" />
+                    <img key={i} src={e.img} alt="img" className="h-[250px] w-[250px]" />
                     <p>{e.name}</p>
                   </div>
                 ))}
@@ -50,7 +50,7 @@ export const MaterialPage = () => {
               <div className="grid grid-cols-2 gap-8 px-2">
                 {e.effects.map((e, i) => (
                   <div className="flex flex-col gap-2 items-center">
-                    <img key={i} src={e.img} alt="img" className="h-[500px] w-full" />
+                    <img key={i} src={e.img} alt="img" className="h-[400px] w-full" />
                     <p>{e.id}</p>
                   </div>
                 ))}
