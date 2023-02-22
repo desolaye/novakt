@@ -17,7 +17,7 @@ export const Header = () => {
       </section>
       <section className="flex flex-col-reverse lg:flex-row">
         <div className="flex items-center gap-2">
-          <a href="https://wa.me/89675000465" target="_blank" className="w-full">
+          <a href="https://wa.me/89137567210" target="_blank" className="w-full">
             <WhatsAppIcon />
           </a>
           <a href="mailto:info@novakdecor-nsk.ru" className="w-full">
@@ -27,8 +27,8 @@ export const Header = () => {
             <TelegramIcon fill="#fff" className="w-[24px] h-[24px]" />
           </a>
         </div>
-        <a href="tel:+79675000465" className="p-2">
-          + 7 (967) 500-04-65
+        <a href="tel:+79137567210" className="p-2">
+          +7 (913) 756-72-10
         </a>
       </section>
     </header>
