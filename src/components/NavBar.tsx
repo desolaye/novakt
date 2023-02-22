@@ -15,8 +15,8 @@ export const NavBar = ({ data }: { data: SectionsType[] }) => {
   }, [isCatalogHovered, isMenuHovered])
 
   return (
-    <section className="overflow-x-auto bg-x-white text-x-gray whitespace-nowrap hide-scroll w-full">
-      <div className="flex justify-evenly relative">
+    <section className="bg-x-white text-x-gray overflow-x-scroll whitespace-nowrap hide-scroll w-full">
+      <div className="flex justify-evenly relative w-fit overflow-x-scroll whitespace-nowrap hide-scroll">
         {data.map((e, i) => (
           <>
             {e.id === 'catalog' && (
