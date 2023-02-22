@@ -16,9 +16,13 @@ export const Header = () => {
         </h1>
       </section>
       <section className="flex flex-col-reverse lg:flex-row">
-        <div className="flex gap-2">
-          <WhatsAppIcon className="self-center w-full" />
-          <EmailIcon className="self-center w-full" />
+        <div className="flex items-center gap-2">
+          <a href="https://wa.me/89675000465" target="_blank" className="w-full">
+            <WhatsAppIcon />
+          </a>
+          <a href="mailto:info@novakdecor-nsk.ru" className="w-full">
+            <EmailIcon />
+          </a>
         </div>
         <div className="p-2">+ 7 (967) 500-04-65</div>
       </section>

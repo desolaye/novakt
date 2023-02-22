@@ -25,7 +25,7 @@ export const MaterialPage = () => {
               </div>
             )}
           </header>
-          <section className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap md:gap-4 px-2 md:px-20 py-4 place-items-center">
+          <section className="grid md:grid-cols-2 md:grid-rows-1 gap gap-y-1 md:gap-4 px-2 md:px-20 py-4 place-items-center">
             <div className="shadow-lg">
               <img src={e.img} alt="img" className="w-96 md:w-full" />
             </div>
@@ -35,7 +35,7 @@ export const MaterialPage = () => {
           </section>
           {e.colors && (
             <Section id="colors" title="Цветовые решения">
-              <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
+              <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 px-2">
                 {e.colors.map((e, i) => (
                   <div className="flex flex-col gap-2 items-center">
                     <img key={i} src={e.img} alt="img" className="h-full" />

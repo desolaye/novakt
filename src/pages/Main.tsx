@@ -33,14 +33,20 @@ export const MainPage = () => {
     <>
       <NavBar data={SECTIONS_DATA} />
       <section className="h-[50vh] relative">
-        <h2 className="absolute select-none z-10 text-white top-[35%] left-[30%] text-center text-xl md:text-3xl">
-          Производим современные отделочные материалы
-          <br /> по гибким ценам
-        </h2>
-        <div className='flex h-full'>
+        <div className="flex w-full h-full items-center justify-center absolute">
+          <h2 className="select-none z-10 text-white  text-center text-xl md:text-3xl">
+            Производим современные отделочные материалы
+            <br /> по гибким ценам
+          </h2>
+        </div>
+        <div className="flex overflow-hidden h-full">
           <img className="h-full w-full object-cover" src={house1} alt="home" />
           <img className="h-full w-full object-cover" src={house2} alt="home" />
-          <img className="h-full w-full object-cover" src={house3} alt="home" />
+          <img
+            className="hidden xl:block h-full w-full object-cover"
+            src={house3}
+            alt="home"
+          />
         </div>
         <div className="absolute h-full w-full bg-x-gray top-0 left-0 opacity-70" />
       </section>
@@ -66,9 +72,9 @@ export const MainPage = () => {
       </Section>
       <Section id="variants" title="Варианты применения">
         <>
-          <div className="flex flex-col md:flex-row gap-2 mx-auto max-w-7xl px-2">
-            <img className="h-full w-full" src={variants} alt="variants" />
-            <img className="h-auto w-full" src={variants2} alt="variants2" />
+          <div className="grid place-items-center xl:grid-cols-2 gap-2 mx-auto max-w-7xl px-2">
+            <img src={variants} alt="variants" />
+            <img src={variants2} alt="variants2" />
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 pt-8">
             {VARIANTS_DATA.map((e, i) => (
