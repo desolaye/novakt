@@ -17,7 +17,7 @@ export const Header = () => {
       </section>
       <section className="flex flex-col-reverse lg:flex-row">
         <div className="flex items-center gap-2">
-          <a href="https://wa.me/89137567210" target="_blank" className="w-full">
+          <a href="https://wa.me/+79137567210" target="_blank" className="w-full">
             <WhatsAppIcon />
           </a>
           <a href="mailto:info@novakdecor-nsk.ru" className="w-full">
