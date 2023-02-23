@@ -3,9 +3,31 @@ import { MATERIALS_DATA, MATERIALS_NAV_DATA } from '@/data'
 import { toValidText } from '@/utils'
 import { Icon24ArrowRightOutline } from '@vkontakte/icons'
 import { useParams } from 'react-router-dom'
+import { Document, Page } from 'react-pdf'
+import { useState } from 'react'
 
 export const MaterialPage = () => {
   const params = useParams()
+  const [numPages, setNumPages] = useState<null | number>(null)
+  const [pageNumber, setPageNumber] = useState(1) //setting 1 to show fisrt page
+
+  function changePage(offset: number) {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset)
+  }
+
+  function previousPage() {
+    changePage(-1)
+  }
+
+  function nextPage() {
+    changePage(1)
+  }
+
+  const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
+    setNumPages(numPages)
+    setPageNumber(1)
+  }
+
   return (
     <>
       <NavBar data={MATERIALS_NAV_DATA} />
@@ -37,8 +59,8 @@ export const MaterialPage = () => {
             <Section id="colors" title="Цветовые решения">
               <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 px-2">
                 {e.colors.map((e, i) => (
-                  <div className="flex flex-col gap-2 items-center">
-                    <img key={i} src={e.img} alt="img" className="h-[250px] w-[250px]" />
+                  <div key={i} className="flex flex-col gap-2 items-center">
+                    <img src={e.img} alt="img" className="h-[250px] w-[250px]" />
                     <p>{e.name}</p>
                   </div>
                 ))}
@@ -49,8 +71,8 @@ export const MaterialPage = () => {
             <Section id="colors" title="Декоративные эффекты">
               <div className="grid xl:grid-cols-2 gap-8 px-2">
                 {e.effects.map((e, i) => (
-                  <div className="flex flex-col gap-2 items-center">
-                    <img key={i} src={e.img} alt="img" className="h-[400px] w-full" />
+                  <div key={i} className="flex flex-col gap-2 items-center">
+                    <img src={e.img} alt="img" className="h-[400px] w-full" />
                     <p>{e.id}</p>
                   </div>
                 ))}
@@ -67,7 +89,35 @@ export const MaterialPage = () => {
                   width="100%"
                   height="600px"
                 />
-                <a href={e.file} download />
+                <div className="md:hidden w-full">
+                  <div>
+                    <p>
+                      Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+                    </p>
+                    <button
+                      type="button"
+                      disabled={pageNumber <= 1}
+                      onClick={previousPage}
+                    >
+                      Previous
+                    </button>
+                    <button
+                      type="button"
+                      disabled={pageNumber >= (numPages ? numPages : 0)}
+                      onClick={nextPage}
+                    >
+                      Next
+                    </button>
+                  </div>
+                  <Document
+                    file={e.file}
+                    options={{ workerSrc: './pdf.worker.js' }}
+                    onLoadSuccess={onDocumentLoadSuccess}
+                    className="max-h-[825px] overflow-y-hidden w-full"
+                  >
+                    <Page pageNumber={pageNumber} />
+                  </Document>
+                </div>
               </>
             </Section>
           )}
