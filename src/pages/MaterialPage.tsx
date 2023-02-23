@@ -47,7 +47,7 @@ export const MaterialPage = () => {
           )}
           {e.effects && (
             <Section id="colors" title="Декоративные эффекты">
-              <div className="grid grid-cols-2 gap-8 px-2">
+              <div className="grid xl:grid-cols-2 gap-8 px-2">
                 {e.effects.map((e, i) => (
                   <div className="flex flex-col gap-2 items-center">
                     <img key={i} src={e.img} alt="img" className="h-[400px] w-full" />
@@ -59,7 +59,16 @@ export const MaterialPage = () => {
           )}
           {e.file && (
             <Section id={e.id} title="Каталог товара" className="px-4">
-              <embed src={e.file} type="application/pdf" width="100%" height="600px" />
+              <>
+                <embed
+                  className="hidden md:block"
+                  src={e.file}
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+                <a href={e.file} download />
+              </>
             </Section>
           )}
         </article>
