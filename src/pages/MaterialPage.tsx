@@ -72,7 +72,7 @@ export const MaterialPage = () => {
               <div className="grid xl:grid-cols-2 gap-8 px-2">
                 {e.effects.map((e, i) => (
                   <div key={i} className="flex flex-col gap-2 items-center">
-                    <img src={e.img} alt="img" className="h-[400px] w-full" />
+                    <img src={e.img} alt="img" className="h-[325px] md:h-[500px] w-full" />
                     <p>{e.id}</p>
                   </div>
                 ))}
