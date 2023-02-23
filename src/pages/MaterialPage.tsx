@@ -72,7 +72,11 @@ export const MaterialPage = () => {
               <div className="grid xl:grid-cols-2 gap-8 px-2">
                 {e.effects.map((e, i) => (
                   <div key={i} className="flex flex-col gap-2 items-center">
-                    <img src={e.img} alt="img" className="h-[325px] md:h-[500px] w-full" />
+                    <img
+                      src={e.img}
+                      alt="img"
+                      className="h-[325px] md:h-[500px] w-full"
+                    />
                     <p>{e.id}</p>
                   </div>
                 ))}
@@ -91,29 +95,32 @@ export const MaterialPage = () => {
                 />
                 <div className="md:hidden w-full">
                   <div>
-                    <p>
+                    <p className="text-center">
                       Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
                     </p>
-                    <button
-                      type="button"
-                      disabled={pageNumber <= 1}
-                      onClick={previousPage}
-                    >
-                      Previous
-                    </button>
-                    <button
-                      type="button"
-                      disabled={pageNumber >= (numPages ? numPages : 0)}
-                      onClick={nextPage}
-                    >
-                      Next
-                    </button>
+                    <div className="w-full flex gap-2 py-2">
+                      <button
+                        className="w-full bg-x-white text-x-gray rounded"
+                        disabled={pageNumber <= 1}
+                        onClick={previousPage}
+                      >
+                        Назад
+                      </button>
+                      <button
+                        className="w-full bg-x-white text-x-gray rounded"
+                        type="button"
+                        disabled={pageNumber >= (numPages ? numPages : 0)}
+                        onClick={nextPage}
+                      >
+                        Вперед
+                      </button>
+                    </div>
                   </div>
                   <Document
                     file={e.file}
                     options={{ workerSrc: './pdf.worker.js' }}
                     onLoadSuccess={onDocumentLoadSuccess}
-                    className="max-h-[825px] overflow-y-hidden w-full"
+                    className="max-h-[825px] overflow-y-hidden w-full overflow-x-scroll hide-scroll"
                   >
                     <Page pageNumber={pageNumber} />
                   </Document>
