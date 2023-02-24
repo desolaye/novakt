@@ -9,7 +9,8 @@ import { useState } from 'react'
 export const MaterialPage = () => {
   const params = useParams()
   const [numPages, setNumPages] = useState<null | number>(null)
-  const [pageNumber, setPageNumber] = useState(1) //setting 1 to show fisrt page
+  const [pageNumber, setPageNumber] = useState(1)
+  const [loader, setLoader] = useState(true)
 
   function changePage(offset: number) {
     setPageNumber((prevPageNumber) => prevPageNumber + offset)
@@ -40,10 +41,13 @@ export const MaterialPage = () => {
                 <div className="text-white text-xl uppercase font-semibold flex flex-col gap-1 h-full justify-center">
                   {toValidText(e.alert)}
                 </div>
-                <button className="text-white self-end font-semibold flex gap-2 hover:gap-8 transition-all">
+                <a
+                  href="https://wa.me/+79137567210"
+                  className="text-white self-end font-semibold flex gap-2 hover:gap-8 transition-all"
+                >
                   <p>Узнать подробнее</p>
                   <Icon24ArrowRightOutline className="self-center" />
-                </button>
+                </a>
               </div>
             )}
           </header>
@@ -122,7 +126,7 @@ export const MaterialPage = () => {
                     onLoadSuccess={onDocumentLoadSuccess}
                     className="max-h-[825px] overflow-y-hidden w-full overflow-x-scroll hide-scroll"
                   >
-                    <Page pageNumber={pageNumber} />
+                    {<Page pageNumber={pageNumber} />}
                   </Document>
                 </div>
               </>

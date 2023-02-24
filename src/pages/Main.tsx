@@ -18,13 +18,6 @@ import house3 from '@/assets/images/dom3.jpg'
 
 import variants from '@/assets/images/variants.png'
 import variants2 from '@/assets/images/variants2.jpg'
-import {
-  Icon24MailOutline,
-  Icon24PhoneOutline,
-  Icon24QuestionOutline,
-} from '@vkontakte/icons'
-
-import { encodedMail } from '@/utils/encodedMail'
 
 const responsive = {
   desktop: {
@@ -39,17 +32,6 @@ const responsive = {
 
 export const MainPage = () => {
   const [showPopUp, setShowPopUp] = useState(false)
-
-  const [mailInfo, setMailInfo] = useState({
-    userName: '',
-    phoneNumber: '',
-    mailTitle: '',
-    mailBody: '',
-  })
-
-  const checkInfo = (e: any) => {
-    setMailInfo((old) => ({ ...old, [e.target.name]: e.target.value }))
-  }
 
   const popupHandler = () => {
     setShowPopUp((old) => !old)
