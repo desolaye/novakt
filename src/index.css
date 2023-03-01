@@ -51,3 +51,15 @@ textarea:focus {
 .react-multiple-carousel__arrow {
   z-index: 10 !important;
 }
+
+.rpv-core__page-layer--single {
+  width: 100% !important;
+}
+
+.rpv-core__canvas-layer {
+  width: 100% !important;
+}
+
+.rpv-core__canvas-layer > canvas {
+  width: 100% !important;
+}

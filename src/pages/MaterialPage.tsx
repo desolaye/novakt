@@ -70,7 +70,7 @@ export const MaterialPage = () => {
             </Section>
           )}
           {e.file && (
-            <Section id={e.id} title="Каталог товара" className="px-4">
+            <Section id={e.id} title="Каталог товара" className='px-4'>
               <>
                 <embed
                   className="hidden md:block"
