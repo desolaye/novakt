@@ -3,22 +3,13 @@ import { MATERIALS_DATA, MATERIALS_NAV_DATA } from '@/data'
 import { toValidText } from '@/utils'
 import { Icon24ArrowRightOutline } from '@vkontakte/icons'
 import { useParams } from 'react-router-dom'
-import { useEffect, useRef } from 'react'
-import WebViewer from '@pdftron/webviewer'
+
+import { Worker } from '@react-pdf-viewer/core'
+import { Viewer } from '@react-pdf-viewer/core'
+import '@react-pdf-viewer/core/lib/styles/index.css'
 
 export const MaterialPage = () => {
   const params = useParams()
-  const pdfView = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    WebViewer(
-      {
-        path: 'lib',
-        initialDoc: MATERIALS_DATA.filter((e) => e.id === params.id)[0].file,
-      },
-      pdfView.current as HTMLDivElement
-    )
-  }, [])
 
   return (
     <>
@@ -88,8 +79,10 @@ export const MaterialPage = () => {
                   width="100%"
                   height="600px"
                 />
-                <div className="md:hidden w-full h-screen">
-                  <div ref={pdfView} className="h-screen" />
+                <div className="h-screen">
+                  <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.3.122/build/pdf.worker.min.js">
+                    <Viewer fileUrl={e.file} />
+                  </Worker>
                 </div>
               </>
             </Section>

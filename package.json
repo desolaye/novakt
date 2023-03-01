@@ -10,7 +10,8 @@
     "format": "npx prettier --write ."
   },
   "dependencies": {
-    "@pdftron/webviewer": "^8.12.0",
+    "@react-pdf-viewer/core": "^3.11.0",
+    "pdfjs-dist": "^3.3.122",
     "react": "^18.2.0",
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.4.5",
