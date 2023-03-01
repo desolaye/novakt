@@ -79,7 +79,7 @@ export const MaterialPage = () => {
                   width="100%"
                   height="600px"
                 />
-                <div className="h-screen">
+                <div className="h-screen block md:hidden">
                   <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.3.122/build/pdf.worker.min.js">
                     <Viewer fileUrl={e.file} />
                   </Worker>
